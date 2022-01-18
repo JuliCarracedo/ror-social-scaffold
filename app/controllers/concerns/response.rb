@@ -3,10 +3,12 @@ module Response
       render json: object, status: status
     end
 
-    def multi_response(object)
-      respond_to do |format|
-        format.html
-        format.json { render json: object }
-      end
+    def multi_response(object, status = :ok)
+      # respond_to do |format|
+        # format.html
+        # format.json { 
+          render json: object, status: status
+        # }
+      # end
     end
   end
