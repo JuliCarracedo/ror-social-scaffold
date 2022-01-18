@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    # @post = Post.new
+    @post = Post.new
     @posts = Post.all
     timeline_posts
     json_response(@posts)
