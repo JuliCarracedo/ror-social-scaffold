@@ -1,5 +1,4 @@
 class CommentsController < ApplicationController
-
   def index
     @comments = Post.find(params[:post_id]).comments
   end
@@ -8,10 +7,8 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.post_id = params[:post_id]
     @comment.user = current_user
-    @comment.save;
-    
+    @comment.save
   end
-
 
   private
 
