@@ -1,4 +1,4 @@
-lass Users::RegistrationsController < Devise::RegistrationsController
+class Users::RegistrationsController < Devise::RegistrationsController
   respond_to :json
 
   private
