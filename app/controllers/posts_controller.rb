@@ -3,9 +3,7 @@ class PostsController < ApplicationController
 
   def index
     @post = Post.new
-    @posts = Post.all
     timeline_posts
-    json_response(@posts)
   end
 
   def create

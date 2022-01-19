@@ -3,6 +3,21 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  namespace :api do
+    devise_scope :user do
+      post 'login', to: '/users/sessions#create', defaults:{ format: :json}
+      post 'logout', to: '/users/sessions#destroy', defaults:{ format: :json}
+      post 'register', to: '/users/registrations#create', defaults:{ format: :json}
+    end
+    namespace :v1 do
+      resources :users, only: [:index, :show]
+      resources :posts, only: [:index, :create, :show] do
+        resources :comments, only: [:create, :index]
+        resources :likes, only: [:create, :destroy]
+      end
+    end
+  end
+
   resources :users, only: [:index, :show]
   resources :posts, only: [:index, :create, :show] do
     resources :comments, only: [:create, :index]
