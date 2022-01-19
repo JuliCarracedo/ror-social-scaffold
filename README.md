@@ -78,6 +78,17 @@ TBA
 - Twitter: [@enionsouza](https://twitter.com/enionsouza)
 - LinkedIn: [Enio Neves de Souza](https://www.linkedin.com/in/enio-neves-de-souza/)
 
+👤 **Ênio Neves de Souza**
+
+- GitHub: [@enionsouza](https://github.com/enionsouza)
+- Twitter: [@enionsouza](https://twitter.com/enionsouza)
+- LinkedIn: [Enio Neves de Souza](https://www.linkedin.com/in/enio-neves-de-souza/)
+
+👤 **Ênio Neves de Souza**
+
+- GitHub: [@enionsouza](https://github.com/enionsouza)
+- Twitter: [@enionsouza](https://twitter.com/enionsouza)
+- LinkedIn: [Enio Neves de Souza](https://www.linkedin.com/in/enio-neves-de-souza/)
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
