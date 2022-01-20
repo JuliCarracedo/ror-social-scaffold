@@ -6,7 +6,7 @@ Rails.application.routes.draw do
                  sessions: 'users/sessions',
                  registrations: 'users/registrations'
              }
-  
+
   namespace :api do
     devise_scope :user do
       post 'login', to: '/users/sessions#create', defaults:{ format: :json}
