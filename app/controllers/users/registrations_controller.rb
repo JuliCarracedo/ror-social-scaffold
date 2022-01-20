@@ -1,5 +1,5 @@
 class Users::RegistrationsController < Devise::RegistrationsController
-  skip_before_action :verify_authenticity_token, :only => :create
+  skip_before_action :verify_authenticity_token, only: :create
   respond_to :json
 
   private
@@ -14,7 +14,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     render json: { message: 'Signed up sucessfully.' }
   end
 
-  def register_failed resource
-    render json: { message: 'Something went wrong.', errors: resource.errors}
+  def register_failed(resource)
+    render json: { message: 'Something went wrong.', errors: resource.errors }
   end
 end
