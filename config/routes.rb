@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     end
     namespace :v1 do
       resources :users, only: [:index, :show] do
-        get 'posts', to: '/posts#all', defaults: {format: :json}
+        get 'posts', to: '/api/v1/posts#all', defaults: {format: :json}
       end
       resources :posts, only: [:index, :create, :show] do
         resources :comments, only: [:create, :index]

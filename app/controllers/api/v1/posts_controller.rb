@@ -8,6 +8,11 @@ module Api
         json_response(@posts)
       end
 
+      def all
+        @posts = User.find(params[:user_id]).posts
+        json_response(@posts)
+      end
+
       def create
         @post = current_user.posts.new(post_params)
         if @post.save
