@@ -309,4 +309,4 @@ Devise.setup do |config|
   
 end
 
-# e1e900ea3deb750c16f7bf2f89d6dbba6565b2070581f1b2981b9ca598db6cd248da537571bc6f812dfd708c6cd4992c1d7e96dc280cbc6e294641d7962d93e3
+#curl -XGET -H "Authorization: Bearer  e1e900ea3deb750c16f7bf2f89d6dbba6565b2070581f1b2981b9ca598db6cd248da537571bc6f812dfd708c6cd4992c1d7e96dc280cbc6e294641d7962d93e3" -H "Content-Type: application/json" http://localhost:3000/member-data

@@ -3,11 +3,15 @@ class Users::SessionsController < Devise::SessionsController
     respond_to do |format|
       format.html { super }
       format.json do
-        warden.authenticate!(scope: resource_name, recall: "#{controller_path}#new")
-        render status: 200, json: { message: 'Log in successful' }
+        if current_user
+          ender status: 200, json: { message: 'already logged in' }
+        else
+          warden.authenticate!(scope: resource_name, recall: "#{controller_path}#new")
+          render status: 200, json: { message: 'Log in successful' }
+        end  
+       end
       end
     end
-  end
 
   # private
 
