@@ -78,6 +78,17 @@ TBA
 - Twitter: [@enionsouza](https://twitter.com/enionsouza)
 - LinkedIn: [Enio Neves de Souza](https://www.linkedin.com/in/enio-neves-de-souza/)
 
+👤 **Ênio Neves de Souza**
+
+- GitHub: [@enionsouza](https://github.com/fortuneonyeka)
+- Twitter: [@onyekafortune](https://twitter.com/onyekafortune)
+- LinkedIn: [Ihedoro Fortunatus](https://www.linkedin.com/in/fortunatus-ihedoro/)
+
+👤 **Ênio Neves de Souza**
+
+- GitHub: [@Fondem-Jr](https://github.com/Fondem-Jr)
+- Twitter: [@OpportunistZeus](https://twitter.com/OpportunistZeus)
+- LinkedIn: [Enio Neves de Souza](https://www.linkedin.com/in/junior-fondem/)
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!

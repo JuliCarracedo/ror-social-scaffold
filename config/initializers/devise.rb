@@ -296,4 +296,17 @@ Devise.setup do |config|
   # When set to false, does not sign a user in automatically after their password is
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
+  config.jwt do |jwt|
+    jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
+        jwt.dispatch_requests = [
+        ['POST', %r{^/api/login$}]
+      ]
+      jwt.revocation_requests = [
+        ['DELETE', %r{^/api/logout$}]
+      ]
+      jwt.expiration_time = 1.day.to_i
+  end
+  
 end
+
+#curl -XGET -H "Authorization: Bearer  e1e900ea3deb750c16f7bf2f89d6dbba6565b2070581f1b2981b9ca598db6cd248da537571bc6f812dfd708c6cd4992c1d7e96dc280cbc6e294641d7962d93e3" -H "Content-Type: application/json" http://localhost:3000/member-data
